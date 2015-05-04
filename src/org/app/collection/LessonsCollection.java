@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.app.model.Answer;
-import org.app.model.Word;
+import org.app.module.Answer;
+import org.app.module.Word;
 
 /**
  * Collections of the questions with answers

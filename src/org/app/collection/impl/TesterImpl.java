@@ -1,5 +1,6 @@
 package org.app.collection.impl;
 
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -9,8 +10,8 @@ import java.util.Map.Entry;
 import org.app.collection.LessonsCollection;
 import org.app.collection.Tester;
 import org.app.logger.CustomLogger;
-import org.app.model.Answer;
-import org.app.model.Word;
+import org.app.module.Answer;
+import org.app.module.Word;
 import org.app.source.Source;
 /**
  * Implementation if the engine, implementation can be a lot
@@ -63,7 +64,9 @@ public class TesterImpl implements Tester {
 
 	@Override
 	public void setCountWords(Integer count) {
-		this.count = count;
+		if(count != null) {
+			this.count = count;
+		}	
 	}
 	
 	@Override
@@ -98,8 +101,11 @@ public class TesterImpl implements Tester {
 	}
 
 	@Override
-	public void setCountAnswers(Integer countAnswers) {		
-		this.countAnswers = countAnswers;
+	public void setCountAnswers(Integer countAnswers) {
+		if(countAnswers != null) {
+			this.countAnswers = countAnswers;
+		}	
+		
 	}
 	
 	

@@ -1,5 +1,6 @@
 package org.app.source.impl;
 
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -9,7 +10,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.app.model.Word;
+import org.app.config.InitApp;
+import org.app.module.Word;
 import org.app.source.Files;
 
 /**
@@ -50,7 +52,7 @@ public class SourceFile implements Files {
 	 */
 	public void addWord(Word word) {
 		if(word == null) {			
-			throw new RuntimeException("������ ������ ����� �c�� ��� ���");
+			throw new RuntimeException("Word can't to be null");
 		}
 		list.add(word);
 	}
@@ -83,7 +85,7 @@ public class SourceFile implements Files {
 	 */
 	//TODO it's not universal
 	private boolean isOriginal(String word) {
-		return word.matches("[a-zA-Z]+");
+		return word.matches(InitApp.getProperties("cutout"));
 	}
 
 	@Override

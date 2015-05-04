@@ -13,9 +13,9 @@ public interface Files extends Source {
 	 * Method parses txt file 
 	 * 
 	 * file format is 
-	 * 	 hello привет 
-	 * 	 something  что то
-	 * 	 it's apple это яблоко 	
+	 * 	 hello РїСЂРёРІРµС‚
+	 * 	 something  С‡С‚Рѕ С‚Рѕ
+	 * 	 it's apple СЌС‚Рѕ СЏР±Р»РѕРєРѕ 	
 	 * 
 	 * @param file
 	 */

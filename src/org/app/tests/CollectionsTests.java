@@ -1,5 +1,6 @@
 package org.app.tests;
 
+
 import static org.junit.Assert.*;
 
 import java.io.File;
@@ -7,7 +8,7 @@ import java.io.File;
 import org.app.collection.LessonsCollection;
 import org.app.collection.Tester;
 import org.app.collection.impl.TesterImpl;
-import org.app.model.Word;
+import org.app.module.Word;
 import org.app.source.Files;
 import org.app.source.impl.SourceFile;
 import org.junit.Ignore;
