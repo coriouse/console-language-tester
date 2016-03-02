@@ -1,2 +1,2 @@
-consoleTeacherTest
+Console language tester
 ==================
